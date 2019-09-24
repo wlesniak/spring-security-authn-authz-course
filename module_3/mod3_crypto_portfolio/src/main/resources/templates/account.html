@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head th:insert="fragments/head :: head">
+	<!-- <script> $(document).ready(function() { alert('hacked'); }); </script> -->
+</head>
+<body>
+	<header th:insert="fragments/header :: header"></header>
+	<div class="container">
+		<h3>Account Details</h3>
+		<table class="table table-borderless">
+			<tbody>
+				<tr>
+					<td  th:utext="${post.content}">Firstname</td>
+					<td th:text="${post.username}">User</td>
+				</tr>
+				<tr>
+					<td  th:utext="${post.content}">Surname</td>
+					<td th:text="${post.username}">Smith</td>
+				</tr>
+				<tr>
+					<td  th:utext="${post.content}">Email</td>
+					<td th:text="${post.username}">smith@gmail.com</td>
+				</tr>
+				<tr>
+					<td  th:utext="${post.content}">Address</td>
+					<td th:text="${post.username}">1 Royal St, London UK</td>
+				</tr>								
+			</tbody>
+		</table>
+	</div>	
+</body>
+</html>

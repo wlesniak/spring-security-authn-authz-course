@@ -1,0 +1,29 @@
+server:
+  port: 8443
+  ssl:
+    key-store-password: password
+    key-store: classpath:keystore.p12
+    key-store-type: PKCS12
+    key-alias: tomcat
+disableEmailVerification: false
+spring:
+  mail:
+    host: 
+    port: 
+    username: 
+    password: 
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false
+         
+logging:
+  level:
+    root: INFO
+    com.memorynotfound: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO

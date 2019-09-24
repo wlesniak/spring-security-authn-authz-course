@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:insert="fragments/head :: head"></head>
+<body>
+	<header th:insert="fragments/header :: header"></header>
+	<div class="container">
+		<h3>Account Details</h3>
+		<table class="table table-borderless">
+			<tbody>
+				<tr>
+					<td >Firstname</td>
+					<td >User</td>
+				</tr>
+				<tr>
+					<td >Surname</td>
+					<td >Smith</td>
+				</tr>
+				<tr>
+					<td >Email</td>
+					<td>smith@gmail.com</td>
+				</tr>
+				<tr>
+					<td  >Address</td>
+					<td>1 Royal St, London UK</td>
+				</tr>								
+			</tbody>
+		</table>
+	</div>	
+</body>
+</html>

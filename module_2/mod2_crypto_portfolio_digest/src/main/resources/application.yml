@@ -1,0 +1,8 @@
+
+      
+logging:
+  level:
+    root: WARN
+    com.memorynotfound: DEBUG
+    org.springframework.web: INFO
+    org.springframework.security: DEBUG
